@@ -1,0 +1,173 @@
+/*
+Colors used:
+Primary Color (Fuel Yellow): rgb(204,153,51); #cc9933;
+Primary Color (Fuel Yellow) darkened: #8e6b23;
+Black: #000000;
+White: #ffffff;
+*/
+
+body {
+    font-family: proxima-nova, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+}
+
+h1, h2, h3, h4 {
+    font-family: freight-text-pro, serif;
+    font-weight: 700;
+    line-height: 1.1;
+}
+h1 {
+    font-size: 45px;
+    color: #ffffff;
+}
+h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #000000;
+}
+h3 {
+    font-size: 30px;
+    color: #cc9933;
+}
+h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color:  #cc9933;
+}
+
+img {
+    width: 100%;
+}
+
+
+a {
+    color: #cc9933;
+    text-decoration: none;
+}
+a:visited {
+    color: #8e6b23;
+}
+a:hover {
+    color: #cc9933;
+    text-decoration: underline;
+}
+a:active {
+    color: #8e6b23;
+}
+
+#header a{
+    color: #000000;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#header a:visited {
+    color: #cc9933;
+}
+#header a:hover {
+    color:  #cc9933;
+    text-decoration: none;
+}
+#header a:active {
+    color: #cc9933;
+}
+#hero {
+    background-color:rgba(204,153,51,0.90);
+}
+#hero p {
+    font-size: 21px;
+}
+#work {
+    background-color:#ffffff;
+}
+#contact {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.button {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.button:hover {
+    background-color: #cc9933;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background-color: #8e6b23;
+    color: #ffffff;
+}
+
+.button.second {
+    background-color: #cc9933;
+}
+.button.second:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+.button.second:active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.button.painbuddies:hover {
+    background-color: #ffca28;
+    color: #000000;
+}
+.button.painbuddies:active {
+    background-color: #ffca28;
+    color: #000000;
+}
+
+.button.backforward {
+    background-color: transparent;
+    color: #000000;
+    font-size: 21px;
+}
+.button.backforward:hover {
+    font-weight: 700;
+}
+.button.backforward:active {
+    font-weight: 700;
+}
+
+.button.third {
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+}
+.button.third:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+.button.third:active {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.hi {
+    color: #000000;
+    font-size: 35px;
+    font-weight: 400;
+}
+.copyright {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+}
+.white {
+    color: #ffffff;
+}
+.black {
+    color: #000000;
+}
