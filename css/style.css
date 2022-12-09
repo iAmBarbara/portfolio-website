@@ -6,43 +6,75 @@ Black: #000000;
 White: #ffffff;
 */
 
+* {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
 body {
     font-family: proxima-nova, sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.4;
     color: #000000;
 }
 
 h1, h2, h3, h4 {
     font-family: freight-text-pro, serif;
-    font-weight: 700;
-    line-height: 1.1;
+    font-weight: 600;
+    line-height: 1.2;
 }
-h1 {
-    font-size: 45px;
+#hero h1 {
+    font-size: 30px;
+    line-height: 1.2;
     color: #ffffff;
+    margin: 0px auto 20px auto;
+}
+.hi {
+    display: inline-block;
+    color: #000000;
+    font-weight: 500;
+    padding-bottom: 5px;
 }
 h2 {
-    font-size: 35px;
+    font-size: 30px;
     text-transform: uppercase;
     font-weight: 400;
     color: #000000;
+    text-align: center;
+    width: 100%;
 }
 h3 {
-    font-size: 30px;
+    font-size: 25px;
     color: #cc9933;
+    margin: 0px;
 }
 h4 {
-    font-size: 25px;
+    font-size: 20px;
+    text-transform: uppercase;
     font-weight: 600;
-    color:  #cc9933;
+    color:  #000000;
 }
 
 img {
     width: 100%;
+    margin-bottom: 10px;
 }
-
+#hero {
+    background-color:rgba(204,153,51,0.90);
+}
+#work {
+    background-color:#ffffff;
+}
+footer {
+    background-color: #000000;
+    color: #ffffff;
+}
+footer h2 {
+    color: #ffffff;
+}
 
 a {
     color: #cc9933;
@@ -59,34 +91,6 @@ a:active {
     color: #8e6b23;
 }
 
-#header a{
-    color: #000000;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-#header a:visited {
-    color: #cc9933;
-}
-#header a:hover {
-    color:  #cc9933;
-    text-decoration: none;
-}
-#header a:active {
-    color: #cc9933;
-}
-#hero {
-    background-color:rgba(204,153,51,0.90);
-}
-#hero p {
-    font-size: 21px;
-}
-#work {
-    background-color:#ffffff;
-}
-#contact {
-    background-color: #000000;
-    color: #ffffff;
-}
 
 .button {
     display: inline-block;
@@ -94,8 +98,9 @@ a:active {
     color: #ffffff; /* needed to override the default link color */
     font-weight: 300;
     text-transform: uppercase;
+    letter-spacing: 0.8px;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 10px;
 }
 .button:hover {
@@ -132,7 +137,6 @@ a:active {
 .button.backforward {
     background-color: transparent;
     color: #000000;
-    font-size: 21px;
 }
 .button.backforward:hover {
     font-weight: 700;
@@ -155,19 +159,177 @@ a:active {
     color: #ffffff;
 }
 
-.hi {
-    color: #000000;
-    font-size: 35px;
-    font-weight: 400;
-}
 .copyright {
-    text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
 }
-.white {
-    color: #ffffff;
+
+
+/* Layout styling */
+
+.container {
+    display: block;
+    padding: 0px 15px;
+    max-width: 1600px;
 }
-.black {
+#header {
+    background-color: #ffffff;
+    display: block;
+    padding-top: 25px;
+    text-align: center;
+}
+.logo {
+    max-width: 100px;
+    text-align: center;
+    margin: 0px;
+}
+nav {
+    display: inline-block;
+    width: 100%;
+}
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0px 25px 0px;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
     color: #000000;
+}
+nav > ul > li > a:visited {
+    color:  #000000;
+}
+nav > ul > li > a:hover {
+    color:  #cc9933;
+    text-decoration: none;
+}
+nav > ul > li > a:active {
+    color:  #cc9933;
+}
+#hero div {
+    display: block;
+    text-align: center;
+    max-width: 85%;
+    margin: 0px auto;
+    padding: 35px 0;
+}
+#hero p {
+    margin-bottom: 10px;
+    max-width: 1000px;
+}
+.row {
+    margin: 20px 0px 40px 0px;
+}
+#work .row { 
+    border-bottom: 1px solid #000000;
+}
+#work h2 {
+    padding: 40px 0px 20px 0px;
+    margin: 0px;
+}
+#work h3 {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+#work p {
+    display: inline-block;
+    padding-bottom: 15px;
+    margin: 0px;
+}
+#contact{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+#contact p {
+    padding-bottom: 10px;
+    max-width: 89%;
+    margin: 20px auto 0px auto;
+}
+.ic-social {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 30px;
+}
+.ic-social:hover {
+    transform: scale(1.2);
+}
+#about img {
+    display: block;
+    max-width: 500px;
+    margin: 0px auto 40px auto;
+}
+#about h3 {
+    display: block;
+    max-width: 850px;
+    margin: 0px auto;
+    padding: 0px;
+}
+#about h4 {
+    padding: 0px 0px 15px 0px;
+    margin: 0px;
+}
+#about p {
+    display: block;
+    max-width: 850px;
+    margin: 0px auto;
+    padding: 0px 0px 10px 0px;
+}
+#about ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding: 0px 0px 0px 15px;
+    margin: 0px 0px 30px 0px;
+}
+#about .row:first-child { 
+    border-bottom: 1px solid #000000;
+}
+#about .tools {
+    padding: 0px 0px 15px 0px;
+}
+.text850 {
+    display: block;
+    max-width: 850px;
+    margin: 0px auto;
+}
+div .button {
+    display: flex;
+    justify-content: center;
+    max-width: 210px;
+    margin: 20px auto 40px auto;
+}
+div .button.margin1 {
+    margin: 30px auto 0px auto;
+}
+div .button.margin2 {
+    margin: 0px auto 40px auto;
+}
+div .button.margin3 {
+    margin: 0px auto 0px auto;
+}
+div .button.margin4 {
+    margin: 20px auto 30px auto;
+}
+div .button.margin5 {
+    margin: 30px auto 50px auto;
+}
+#painbuddies img {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+#painbuddies video {
+    display: block;
+    margin: 0px;
+    padding: 0px;
 }
