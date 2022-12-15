@@ -35,8 +35,11 @@ h1, h2, h3, h4 {
 .hi {
     display: inline-block;
     color: #000000;
-    font-weight: 500;
+    font-weight: 400;
     padding-bottom: 5px;
+}
+.hi2 {
+    display: block;
 }
 h2 {
     font-size: 30px;
@@ -60,7 +63,6 @@ h4 {
 
 img {
     width: 100%;
-    margin-bottom: 10px;
 }
 #hero {
     background-color:rgba(204,153,51,0.90);
@@ -102,6 +104,8 @@ a:active {
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 10px;
+    transition: 0.3s background-color;
+
 }
 .button:hover {
     background-color: #cc9933;
@@ -172,7 +176,6 @@ a:active {
 .container {
     display: block;
     padding: 0px 15px;
-    max-width: 1600px;
 }
 #header {
     background-color: #ffffff;
@@ -183,7 +186,7 @@ a:active {
 .logo {
     max-width: 100px;
     text-align: center;
-    margin: 0px;
+    margin: 0px auto;
 }
 nav {
     display: inline-block;
@@ -214,7 +217,7 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active {
     color:  #cc9933;
 }
-#hero div {
+#hero .container {
     display: block;
     text-align: center;
     max-width: 85%;
@@ -227,6 +230,11 @@ nav > ul > li > a:active {
 }
 .row {
     margin: 20px 0px 40px 0px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 #work .row { 
     border-bottom: 1px solid #000000;
@@ -244,6 +252,16 @@ nav > ul > li > a:active {
     padding-bottom: 15px;
     margin: 0px;
 }
+#work img {
+    padding-bottom: 10px;
+}
+#work svg {
+    padding-bottom: 10px;
+}
+.grayscale {
+    padding-bottom: 10px;
+    filter: grayscale(100%);
+}
 #contact{
     display: inline-block;
     text-align: center;
@@ -254,6 +272,9 @@ nav > ul > li > a:active {
     padding-bottom: 10px;
     max-width: 89%;
     margin: 20px auto 0px auto;
+}
+.getintouch {
+    display: block;
 }
 .ic-social {
     display: inline-block;
@@ -266,8 +287,10 @@ nav > ul > li > a:active {
 }
 #about img {
     display: block;
-    max-width: 500px;
     margin: 0px auto 40px auto;
+}
+#about h2 {
+    text-align: left;
 }
 #about h3 {
     display: block;
@@ -278,6 +301,9 @@ nav > ul > li > a:active {
 #about h4 {
     padding: 0px 0px 15px 0px;
     margin: 0px;
+}
+#about .skills {
+    margin: 40px 0px 40px 0px;
 }
 #about p {
     display: block;
@@ -291,16 +317,11 @@ nav > ul > li > a:active {
     padding: 0px 0px 0px 15px;
     margin: 0px 0px 30px 0px;
 }
-#about .row:first-child { 
+#about .border {
     border-bottom: 1px solid #000000;
 }
 #about .tools {
-    padding: 0px 0px 15px 0px;
-}
-.text850 {
-    display: block;
-    max-width: 850px;
-    margin: 0px auto;
+    padding-bottom: 20px;
 }
 div .button {
     display: flex;
@@ -314,14 +335,36 @@ div .button.margin1 {
 div .button.margin2 {
     margin: 0px auto 40px auto;
 }
-div .button.margin3 {
-    margin: 0px auto 0px auto;
+div .button.margin-bfw {
+    margin: 20px auto 0px auto;
 }
-div .button.margin4 {
+div .button.margin-overview {
+    margin: 30px auto 100px auto;
+}
+div .button.margin-mail {
     margin: 20px auto 30px auto;
 }
 div .button.margin5 {
-    margin: 30px auto 50px auto;
+    margin: 30px auto 40px auto;
+}
+#work div .button {
+    display: inline-block;
+    text-align: center;
+    min-width: 180px;
+}
+#work .margin-without-btn {
+    display:block;
+    margin-bottom: 30px;
+}
+#about div .button {
+    display: inline-block;
+    text-align: center;
+    min-width: 210px;
+}
+.project {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 #painbuddies img {
     display: block;
@@ -332,4 +375,378 @@ div .button.margin5 {
     display: block;
     margin: 0px;
     padding: 0px;
+}
+#greiff img {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* ........................
+ANIMATION CF
+...........................*/
+
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+}
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* ........................
+ANIMATION LOGO
+...........................*/
+
+@keyframes target-move {
+    0% {transform: translate(0,0);}
+    20% {transform: translate(-35px,0);}
+    40% {transform: translate(35px,0);}
+    60% {transform: translate(0,35px);}
+    80% {transform: translate(0,-35px);}
+    100% {transform: translate(0,0);}
+}
+.target {
+    animation: 6s target-move infinite alternate linear;
+}
+@keyframes hunt {
+    0% {opacity: 0%;}
+    50% {opacity: 0%;}
+    100% {fill: #cc9933;}
+}
+.wolpertinger {
+    animation: 3s hunt infinite alternate linear;
+}
+@keyframes color-change {
+    0% {fill: #ffffff;}
+    50% {fill: #cc9933;}
+    100% {fill: #ffffff;}
+}
+.hg {
+    animation: 6s color-change 2s ease-in-out infinite;
+}
+@keyframes text-animation {
+    0% {opacity: 0;}
+    50% {opacity: 100%;}
+    100% {opacity: 0;}
+}
+.textline {
+    animation: 6s text-animation 2000ms ease-in-out infinite;
+}
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+.col-md-6 {
+    width: 50%;
+}
+[class*="col-"] {
+    float: left;
+    padding: 0px 25px 0px 0px;
+}
+.nop {
+    padding: 0px;
+}
+.container {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#hero .container {
+    max-width: 600px;
+    padding: 50px 0px;
+}
+#hero h1 {
+    font-size: 35px;
+}
+.hi {
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.hi2 {
+    display: inline-block;
+}
+#work .row { 
+    margin: 20px 0px 45px 0px;
+}
+#work .button{
+    margin: 20px auto 45px auto;
+}
+#work div .button {
+    display: inline-block;
+    text-align: center;
+    min-width: 210px;
+}
+#about .button {
+    display: inline-block;
+}
+#about h2 {
+    text-align: left;
+}
+#about img {
+    max-width: 450px;
+    margin: 0px auto 30px auto;
+}
+#about .skills {
+    margin: 50px 0px 40px 0px;
+}
+#contact {
+    padding: 30px 0px 50px 0px;
+}
+.ic-social {
+    margin-bottom: 30px;
+}
+.getintouch {
+    display: inline-block;
+}
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+.logo {
+        max-width: 110px;
+} 
+header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+nav {
+    display: flex;
+    width: auto;    
+    float: left;
+    margin: -80px 0px 0px 0px;
+    }
+nav > ul {
+    display: flex;
+}
+.col-lg-8 {
+    width: 65%;
+}
+.col-lg-4 {
+    width: 35%;
+}
+.container {
+    max-width: 850px;
+}
+#hero .container {
+    max-width: 760px;
+    padding: 70px 0px;
+}
+#hero h1 {
+    font-size: 45px;
+    margin: 0px auto 30px auto;
+}
+#hero p {
+    max-width: 650px; 
+}
+#work h2 {
+    padding: 50px 0px 30px 0px;
+}
+#work .row { 
+    margin: 20px 0px 55px 0px;
+}
+#work .button{
+    margin: 20px auto 55px auto;
+}
+#work svg {
+    padding-bottom: 60px;
+} 
+h2 {
+    font-size: 35px;
+}
+h3 {
+    font-size: 30px;
+}
+h4 {
+    font-size: 24px;
+}
+#about img {
+    max-width: 500px;
+    padding-top: 40px;
+}
+footer .container {
+    max-width: 650px;
+}
+#contact {
+    padding: 40px 0px 60px 0px;
+}
+.ic-social {
+    margin-bottom: 50px;
+}
+}
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+header {
+    position: fixed;
+    width: 100%;
+}
+main {
+    padding-top: 171px;
+}
+.logo {
+    max-width: 120px;
+}
+nav {
+    margin: -90px 0px 0px 0px;
+}
+nav > ul > li > a {
+    font-size: 16px;
+}
+#about .col-md-6 {
+    width: 100%;
+}
+#about .col-xlg-8 {
+    width: 65%;
+    padding: 0px 80px 0px 0px;
+}
+#work .col-xlg-8 {
+    width: 65%;
+    padding: 0px 40px 0px 0px;
+}
+.col-xlg-4 {
+    width: 35%;
+}
+.container {
+    max-width: 1200px;
+}
+#hero .container {
+    max-width: 970px;   
+    padding: 100px 0px;
+}
+#hero h1 {
+    font-size: 57px;
+}
+.hi {
+    font-size: 40px;
+}
+#hero p {
+    max-width: 750px; 
+}
+body {
+    font-size: 18px;
+}
+h2 {
+    font-size: 40px;
+}
+#work h2 {
+    padding: 60px 0px 40px 0px;
+}
+#work div .button {
+    min-width: 230px;
+}
+div .button {
+    max-width: 230px;
+}
+#work .row { 
+    margin: 20px 0px 70px 0px;
+}
+#work .button{
+    margin: 20px auto 70px auto;
+}    
+#about h2 {
+    text-align: left;
+}
+#about .skills {
+    margin: 35px 0px 40px 0px;
+}
+#about .border {
+    border-bottom: 0px;
+}
+footer .container {
+    max-width: 730px;
+}
+#contact {
+    padding: 60px 0px 90px 0px;
+}
+.ic-social {
+    margin-bottom: 60px;
+}
+}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+
+nav > ul > li > a {
+    font-size: 17px;
+}
+#work .col-xxlg-8 {
+    width: 65%;
+    padding: 0px 50px 0px 0px;
+}
+.col-xxlg-4 {
+    width: 35%;
+}
+.container {
+    max-width: 1400px;
+}
+#hero .container {
+    max-width: 1200px;   
+    padding: 150px 0px 200px 0px;
+}
+#hero h1 {
+    font-size: 70px;
+    line-height: 1.1;
+}
+.hi {
+    font-size: 40px;
+}
+#hero p {
+    font-size: 20px;
+    max-width: 830px; 
+}
+body {
+    font-size: 20px;
+}
+h2 {
+    font-size: 50px;
+}
+h3 {
+    font-size: 35px;
+}
+#work img {
+    padding-bottom: 60px;
+}
+#work div .button {
+    min-width: 250px;
+}
+div .button {
+    max-width: 250px;
+}
+#about img {
+    max-width: 600px;
+}
 }
