@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Barbara Langguth | About</title>
         <link href="img/essentials/favicon_barbara_langguth.ico" rel="shortcut icon">
+        <script src="https://kit.fontawesome.com/68f0c32663.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://use.typekit.net/hwy3uua.css">
@@ -11,22 +12,25 @@
     </head>
     
     <body>
-        <header id="header">
-            <div class="container">
+    <header id="header">
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
                 <div class="logo">
-                <img src="img/essentials/logo_barbara_langguth.svg" alt="Barbara Langguth">
+                    <img src="img/essentials/logo_barbara_langguth.svg" alt="Barbara Langguth">
                 </div>
                 <div>
-                <nav>
-                    <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+                    <nav>
+                        <ul>
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About & CV</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="ic-toggle" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-         </header>
+        </div>
+    </header>
      
     <main>
         <div id="about"><!-- orange -->
@@ -46,7 +50,7 @@
                         <p>Besides products and businesses, I also love to support real people in their growing process. Therefore, I could additionally gain years of expertise and know-how as a Training Manager and IHK examiner.</p>
                         <p><h3>Fine Art Designer</h3></p>
                         <p>Inspired by my love for the graphic-technical design process as well as a strong passion for holistic spatial aesthetics and the highest level of detail perfectionism, I create artworks that excellently combine my enthusiasm for these disciplines.</p>
-                        <a href="files/b-langguth_resume.pdf" target="_blank" class="button margin5">Download Resume</a>
+                        <a href="files/b-langguth_resume.pdf" target="_blank" class="button margin5">Download CV</a>
                     </div>
                     <div class="col-xlg-4"><!-- mint -->
                         <h2 class="skills">Skills & Tools</h2>
@@ -135,6 +139,7 @@
         </div>
      </footer>
 
-    <script src="js/scripts.js"></script>
+     <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+     <script src="js/scripts.js"></script>
     </body>
 </html>
