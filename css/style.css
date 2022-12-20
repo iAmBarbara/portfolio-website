@@ -30,7 +30,7 @@ h1, h2, h3, h4 {
     font-size: 30px;
     line-height: 1.2;
     color: #ffffff;
-    margin: 0px auto 20px auto;
+    margin: 0 auto 20px auto;
 }
 .hi {
     display: inline-block;
@@ -52,7 +52,7 @@ h2 {
 h3 {
     font-size: 25px;
     color: #cc9933;
-    margin: 0px;
+    margin: 0;
 }
 h4 {
     font-size: 20px;
@@ -175,36 +175,26 @@ a:active {
 
 .container {
     display: block;
-    padding: 0px 15px;
+    padding: 0 15px;
 }
 #header {
     background-color: #ffffff;
     display: block;
     padding-top: 25px;
-    text-align: center;
     z-index: 1000;
 }
 .logo {
     max-width: 100px;
     text-align: center;
-    margin: 0px auto;
-}
-nav {
-    display: inline-block;
-    width: 100%;
+    margin: 0 auto;
 }
 nav > ul {
     list-style-type: none;
     padding: 0;
-    margin: 15px 0px 25px 0px;
-}
-nav > ul > li {
-    display: inline-block;
 }
 nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
-    font-size: 15px;
     font-weight: 500;
     color: #000000;
 }
@@ -218,11 +208,32 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active {
     color:  #cc9933;
 }
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+.navtoggle li .ic-toggle {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.navtoggle.responsive li  {
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+}
+.navtoggle.responsive li:last-child  {
+    padding-bottom: 5px;
+}
 #hero .container {
     display: block;
     text-align: center;
     max-width: 85%;
-    margin: 0px auto;
+    margin: 0 auto;
     padding: 35px 0;
 }
 #hero p {
@@ -230,7 +241,7 @@ nav > ul > li > a:active {
     max-width: 1000px;
 }
 .row {
-    margin: 20px 0px 40px 0px;
+    margin: 20px 0 40px 0;
 }
 .row::after {
     content: "";
@@ -241,17 +252,17 @@ nav > ul > li > a:active {
     border-bottom: 1px solid #000000;
 }
 #work h2 {
-    padding: 40px 0px 20px 0px;
-    margin: 0px;
+    padding: 40px 0 20px 0;
+    margin: 0;
 }
 #work h3 {
     padding-bottom: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 #work p {
     display: inline-block;
     padding-bottom: 15px;
-    margin: 0px;
+    margin: 0;
 }
 #work img {
     padding-bottom: 10px;
@@ -267,12 +278,12 @@ nav > ul > li > a:active {
     display: inline-block;
     text-align: center;
     width: 100%;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0 20px 0;
 }
 #contact p {
     padding-bottom: 10px;
     max-width: 89%;
-    margin: 20px auto 0px auto;
+    margin: 20px auto 0 auto;
 }
 .getintouch {
     display: block;
@@ -288,7 +299,7 @@ nav > ul > li > a:active {
 }
 #about img {
     display: block;
-    margin: 0px auto 40px auto;
+    margin: 0 auto 40px auto;
 }
 #about h2 {
     text-align: left;
@@ -296,27 +307,27 @@ nav > ul > li > a:active {
 #about h3 {
     display: block;
     max-width: 850px;
-    margin: 0px auto;
-    padding: 0px;
+    margin: 0 auto;
+    padding: 0;
 }
 #about h4 {
-    padding: 0px 0px 15px 0px;
-    margin: 0px;
+    padding: 0 0 15px 0;
+    margin: 0;
 }
 #about .skills {
-    margin: 40px 0px 40px 0px;
+    margin: 40px 0 40px 0;
 }
 #about p {
     display: block;
     max-width: 850px;
-    margin: 0px auto;
-    padding: 0px 0px 10px 0px;
+    margin: 0 auto;
+    padding: 0 0 10px 0;
 }
 #about ul {
     list-style-type: disc;
     list-style-position: outside;
-    padding: 0px 0px 0px 15px;
-    margin: 0px 0px 30px 0px;
+    padding: 0 0 0 15px;
+    margin: 0 0 30px 0;
 }
 #about .border {
     border-bottom: 1px solid #000000;
@@ -331,13 +342,13 @@ div .button {
     margin: 20px auto 40px auto;
 }
 div .button.margin1 {
-    margin: 30px auto 0px auto;
+    margin: 30px auto 0 auto;
 }
 div .button.margin2 {
-    margin: 0px auto 40px auto;
+    margin: 0 auto 40px auto;
 }
 div .button.margin-bfw {
-    margin: 20px auto 0px auto;
+    margin: 20px auto 0 auto;
 }
 div .button.margin-overview {
     margin: 30px auto 100px auto;
@@ -364,23 +375,23 @@ div .button.margin5 {
 }
 .project {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 #painbuddies img {
     display: block;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 #painbuddies video {
     display: block;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 #greiff img {
     display: block;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -461,15 +472,36 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
 
+#header {
+    text-align: center;
+}
+nav > ul {
+    margin: 15px 0 25px 0;
+}    
+nav > ul > li {
+    display: inline-block;
+}
+nav > ul > li > a {
+    font-size: 15px;
+}    
+.navtoggle li:not(:last-child) {
+    display: inline-block;
+}
+.navtoggle li:last-child {
+    display: none;
+}
+.navtoggle.responsive li  {
+    padding: 0;
+}
 .col-md-6 {
     width: 50%;
 }
 [class*="col-"] {
     float: left;
-    padding: 0px 25px 0px 0px;
+    padding: 0 25px 0 0;
 }
 .nop {
-    padding: 0px;
+    padding: 0;
 }
 .container {
     max-width: 650px;
@@ -478,7 +510,7 @@ Medium devices (640px and larger)
 }
 #hero .container {
     max-width: 600px;
-    padding: 50px 0px;
+    padding: 50px 0;
 }
 #hero h1 {
     font-size: 35px;
@@ -491,7 +523,7 @@ Medium devices (640px and larger)
     display: inline-block;
 }
 #work .row { 
-    margin: 20px 0px 45px 0px;
+    margin: 20px 0 45px 0;
 }
 #work .button{
     margin: 20px auto 45px auto;
@@ -512,10 +544,10 @@ Medium devices (640px and larger)
     margin: 0px auto 30px auto;
 }
 #about .skills {
-    margin: 50px 0px 40px 0px;
+    margin: 50px 0 40px 0;
 }
 #contact {
-    padding: 30px 0px 50px 0px;
+    padding: 30px 0 50px 0;
 }
 .ic-social {
     margin-bottom: 30px;
@@ -531,7 +563,7 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
 
 .logo {
-        max-width: 110px;
+    max-width: 110px;
 } 
 header {
     display: flex;
@@ -542,7 +574,7 @@ nav {
     display: flex;
     width: auto;    
     float: left;
-    margin: -80px 0px 0px 0px;
+    margin: -80px 0 0 0;
     }
 nav > ul {
     display: flex;
@@ -558,20 +590,20 @@ nav > ul {
 }
 #hero .container {
     max-width: 760px;
-    padding: 70px 0px;
+    padding: 70px 0;
 }
 #hero h1 {
     font-size: 45px;
-    margin: 0px auto 30px auto;
+    margin: 0 auto 30px auto;
 }
 #hero p {
     max-width: 650px; 
 }
 #work h2 {
-    padding: 50px 0px 30px 0px;
+    padding: 50px 0 30px 0;
 }
 #work .row { 
-    margin: 20px 0px 55px 0px;
+    margin: 20px 0 55px 0;
 }
 #work .button{
     margin: 20px auto 55px auto;
@@ -596,7 +628,7 @@ footer .container {
     max-width: 650px;
 }
 #contact {
-    padding: 40px 0px 60px 0px;
+    padding: 40px 0 60px 0;
 }
 .ic-social {
     margin-bottom: 50px;
@@ -620,7 +652,7 @@ main {
     max-width: 120px;
 }
 nav {
-    margin: -90px 0px 0px 0px;
+    margin: -90px 0 0 0;
 }
 nav > ul > li > a {
     font-size: 16px;
@@ -630,11 +662,11 @@ nav > ul > li > a {
 }
 #about .col-xlg-8 {
     width: 65%;
-    padding: 0px 80px 0px 0px;
+    padding: 0 80px 0 0;
 }
 #work .col-xlg-8 {
     width: 65%;
-    padding: 0px 40px 0px 0px;
+    padding: 0 40px 0 0;
 }
 .col-xlg-4 {
     width: 35%;
@@ -644,7 +676,7 @@ nav > ul > li > a {
 }
 #hero .container {
     max-width: 970px;   
-    padding: 100px 0px;
+    padding: 100px 0;
 }
 #hero h1 {
     font-size: 57px;
@@ -662,7 +694,7 @@ h2 {
     font-size: 40px;
 }
 #work h2 {
-    padding: 60px 0px 40px 0px;
+    padding: 60px 0 40px 0;
 }
 #work div .button {
     min-width: 230px;
@@ -671,7 +703,7 @@ div .button {
     max-width: 230px;
 }
 #work .row { 
-    margin: 20px 0px 70px 0px;
+    margin: 20px 0 70px 0;
 }
 #work .button{
     margin: 20px auto 70px auto;
@@ -680,16 +712,16 @@ div .button {
     text-align: left;
 }
 #about .skills {
-    margin: 35px 0px 40px 0px;
+    margin: 35px 0 40px 0;
 }
 #about .border {
-    border-bottom: 0px;
+    border-bottom: 0;
 }
 footer .container {
     max-width: 730px;
 }
 #contact {
-    padding: 60px 0px 90px 0px;
+    padding: 60px 0 90px 0;
 }
 .ic-social {
     margin-bottom: 60px;
@@ -706,7 +738,7 @@ nav > ul > li > a {
 }
 #work .col-xxlg-8 {
     width: 65%;
-    padding: 0px 50px 0px 0px;
+    padding: 0 50px 0 0;
 }
 .col-xxlg-4 {
     width: 35%;
@@ -716,7 +748,7 @@ nav > ul > li > a {
 }
 #hero .container {
     max-width: 1200px;   
-    padding: 150px 0px 200px 0px;
+    padding: 150px 0 200px 0;
 }
 #hero h1 {
     font-size: 70px;
