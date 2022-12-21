@@ -1,12 +1,12 @@
 console.log("Hi and welcome to my Portfolio")
 
 function menuToggle() {
-    var x = document.getElementById('myNavtoggle');
-    if (x.className === 'navtoggle') {
-      x.className += ' responsive';
-    } else {
-      x.className = 'navtoggle';
-    }
+  var x = document.getElementById('myNavtoggle');
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
 }
 
 $('a[href^="#"]').on('click',function(e) {
@@ -19,3 +19,25 @@ $('a[href^="#"]').on('click',function(e) {
      window.location.hash = target;
     });
    });
+
+$(document).ready(function () {
+  $('a[href^="#work"]').click(function (event) {
+    if ($(window).width() >= 1440) {
+      event.preventDefault();
+      $("html, body").animate({
+      scrollTop: 601
+    }, 800);
+  }
+  });
+});
+
+$(document).ready(function () {
+  $('a[href^="#work"]').click(function (event) {
+    if ($(window).width() >= 1920) {
+      event.preventDefault();
+      $("html, body").animate({
+      scrollTop: 792
+    }, 800);
+  }
+  });
+});
