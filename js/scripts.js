@@ -23,21 +23,11 @@ $('a[href^="#"]').on('click',function(e) {
 $(document).ready(function () {
   $('a[href^="#work"]').click(function (event) {
     if ($(window).width() >= 1440) {
+      var scrollTop = ($(window).width() >= 1920) ? 792:601;
       event.preventDefault();
       $("html, body").animate({
-      scrollTop: 601
+      scrollTop: scrollTop
     }, 800);
-  }
-  });
-});
-
-$(document).ready(function () {
-  $('a[href^="#work"]').click(function (event) {
-    if ($(window).width() >= 1920) {
-      event.preventDefault();
-      $("html, body").animate({
-      scrollTop: 792
-    }, 800);
-  }
+    }
   });
 });
