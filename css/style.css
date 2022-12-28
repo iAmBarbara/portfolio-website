@@ -236,6 +236,9 @@ nav > ul > li > a:active {
     margin: 0 auto;
     padding: 35px 0;
 }
+#hero span:last-child {
+    display: block;
+}
 #hero p {
     margin-bottom: 10px;
     max-width: 1000px;
@@ -509,7 +512,7 @@ nav > ul > li > a {
     margin-right: auto;
 }
 #hero .container {
-    max-width: 600px;
+    max-width: 590px;
     padding: 50px 0;
 }
 #hero h1 {
@@ -520,6 +523,9 @@ nav > ul > li > a {
     padding-bottom: 15px;
 }
 .hi2 {
+    display: inline-block;
+}
+#hero span:last-child {
     display: inline-block;
 }
 #work .row { 
@@ -590,7 +596,7 @@ nav > ul {
 }
 #hero .container {
     max-width: 760px;
-    padding: 70px 0;
+    padding: 60px 0 75px 0;
 }
 #hero h1 {
     font-size: 45px;
@@ -675,8 +681,7 @@ nav > ul > li > a {
     max-width: 1200px;
 }
 #hero .container {
-    max-width: 970px;   
-    padding: 100px 0;
+    max-width: 1000px;
 }
 #hero h1 {
     font-size: 57px;
@@ -748,11 +753,11 @@ nav > ul > li > a {
 }
 #hero .container {
     max-width: 1200px;   
-    padding: 150px 0 200px 0;
+    padding: 180px 0 240px 0;
 }
 #hero h1 {
     font-size: 70px;
-    line-height: 1.1;
+    line-height: 1.15;
 }
 .hi {
     font-size: 40px;
