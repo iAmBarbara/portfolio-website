@@ -21,7 +21,7 @@ $('a[href^="#"]').on('click',function(e) {
 $(document).ready(function () {
   $('a[href^="#work"]').click(function (event) {
     if ($(window).width() >= 1440) {
-        var scrollTop = ($(window).width() >= 1920) ? 792:601;
+        var scrollTop = ($(window).width() >= 1920) ? 956:605;
         event.preventDefault();
         $("html, body").animate({
         scrollTop: scrollTop
