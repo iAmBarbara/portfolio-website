@@ -98,7 +98,6 @@ a:active {
     display: inline-block;
     background-color: #000000;
     color: #ffffff; /* needed to override the default link color */
-    font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.8px;
     text-decoration: none;
