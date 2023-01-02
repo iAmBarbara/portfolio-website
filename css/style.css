@@ -138,17 +138,6 @@ a:active {
     color: #000000;
 }
 
-.button.backforward {
-    background-color: transparent;
-    color: #000000;
-}
-.button.backforward:hover {
-    font-weight: 700;
-}
-.button.backforward:active {
-    font-weight: 700;
-}
-
 .button.third {
     background-color: transparent;
     color: #000000;
@@ -354,7 +343,7 @@ div .button.margin-bfw {
     margin: 20px auto 0 auto;
 }
 div .button.margin-overview {
-    margin: 30px auto 100px auto;
+    margin: 40px auto 80px auto;
 }
 div .button.margin-mail {
     margin: 20px auto 30px auto;
