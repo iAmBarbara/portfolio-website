@@ -21,7 +21,7 @@ body {
     color: #000000;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: freight-text-pro, serif;
     font-weight: 600;
     line-height: 1.2;
@@ -59,6 +59,18 @@ h4 {
     text-transform: uppercase;
     font-weight: 600;
     color:  #000000;
+}
+h5 {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+h6 {
+    font-family: proxima-nova, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #cc9933;
 }
 
 img {
@@ -305,6 +317,18 @@ nav > ul > li > a:active {
     padding: 0 0 15px 0;
     margin: 0;
 }
+#about h5 {
+    padding: 0;
+    margin: 0;
+}
+#about h6 {
+    padding: 0;
+    margin: 0;
+}
+#about .lead {
+    display: block;
+    margin: 0 0 10px 0;
+}
 #about .skills {
     margin: 40px 0 40px 0;
 }
@@ -348,7 +372,7 @@ div .button.margin-mail {
     margin: 20px auto 30px auto;
 }
 div .button.margin5 {
-    margin: 30px auto 40px auto;
+    margin: 30px auto 60px auto;
 }
 #work div .button {
     display: inline-block;
@@ -500,11 +524,14 @@ nav > ul > li > a {
     margin-right: auto;
 }
 #hero .container {
-    max-width: 590px;
+    max-width: 630px;
     padding: 50px 0;
 }
 #hero h1 {
     font-size: 35px;
+}
+#hero p {
+    max-width: 560px; 
 }
 .hi {
     font-size: 30px;
@@ -536,6 +563,9 @@ nav > ul > li > a {
 #about img {
     max-width: 450px;
     margin: 0px auto 30px auto;
+}
+#about .lead {
+    display: inline-block;
 }
 #about .skills {
     margin: 50px 0 40px 0;
@@ -583,7 +613,7 @@ nav > ul {
     max-width: 850px;
 }
 #hero .container {
-    max-width: 760px;
+    max-width: 800px;
     padding: 60px 0 75px 0;
 }
 #hero h1 {
@@ -591,7 +621,7 @@ nav > ul {
     margin: 0 auto 30px auto;
 }
 #hero p {
-    max-width: 650px; 
+    max-width: 720px; 
 }
 #work h2 {
     padding: 50px 0 30px 0;
@@ -678,7 +708,7 @@ nav > ul > li > a {
     font-size: 40px;
 }
 #hero p {
-    max-width: 750px; 
+    max-width: 810px; 
 }
 body {
     font-size: 18px;
@@ -703,6 +733,12 @@ div .button {
 }    
 #about h2 {
     text-align: left;
+}
+#about h5 {
+    font-size: 19px;
+}
+#about h6 {
+    font-size: 18px;
 }
 #about .skills {
     margin: 35px 0 40px 0;
@@ -740,7 +776,7 @@ nav > ul > li > a {
     max-width: 1400px;
 }
 #hero .container {
-    max-width: 1200px;   
+    max-width: 1300px;   
     padding: 180px 0 240px 0;
 }
 #hero h1 {
@@ -752,7 +788,7 @@ nav > ul > li > a {
 }
 #hero p {
     font-size: 20px;
-    max-width: 830px; 
+    max-width: 900px; 
 }
 body {
     font-size: 20px;
@@ -762,6 +798,12 @@ h2 {
 }
 h3 {
     font-size: 35px;
+}
+#about h5 {
+    font-size: 21px;
+}
+#about h6 {
+    font-size: 20px;
 }
 #work img {
     padding-bottom: 60px;
@@ -774,5 +816,8 @@ div .button {
 }
 #about img {
     max-width: 600px;
+}
+footer .container {
+    max-width: 800px;
 }
 }
