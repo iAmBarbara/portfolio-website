@@ -1,7 +1,7 @@
 /*
 Colors used:
 Primary Color (Fuel Yellow): rgb(204,153,51); #cc9933;
-Primary Color (Fuel Yellow) darkened: #8e6b23;
+Primary Color (Fuel Yellow) darkened: #a37a28;
 Black: #000000;
 White: #ffffff;
 */
@@ -96,14 +96,14 @@ a {
     text-decoration: none;
 }
 a:visited {
-    color: #8e6b23;
+    color: #a37a28;
 }
 a:hover {
     color: #cc9933;
     text-decoration: underline;
 }
 a:active {
-    color: #8e6b23;
+    color: #a37a28;
 }
 
 
