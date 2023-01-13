@@ -105,6 +105,12 @@ a:hover {
 a:active {
     color: #8e6b23;
 }
+.active-nav-link {
+    color:#cc9933;
+}
+nav > ul > li > a.active-nav-link:visited {
+    color:#cc9933;
+}
 
 
 .button {
@@ -224,6 +230,9 @@ nav > ul > li > a:active {
     top: 35px;
     font-size: 20px;
     padding-right: 20px;
+}
+.navtoggle li .ic-toggle:hover {
+    color: #000000;
 }
 .navtoggle.responsive li  {
     display: block;
